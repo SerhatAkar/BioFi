@@ -30,9 +30,10 @@ const vcStatusRegistry = new VcStatusRegistry(
   privateKey
 );
 
+const sendTimerInfos = async () => {
+
 const connector = useWalletConnect();
 
-const sendTimerInfos = async () => {
   const startDateFormated = new Date(startDate);
   const stopDateFormated = new Date(stopDate);
   const timeSpent =

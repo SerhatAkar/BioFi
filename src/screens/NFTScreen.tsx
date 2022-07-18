@@ -31,14 +31,14 @@ export default function NFTScreen({ navigation }: Props) {
 
   const connector = useWalletConnect();
   const accounts = connector.accounts;
-  const contract = '0x987934934388446e9a1B8261d6859D31cdD0Eaa5';
+  const contract = '0xd5C80419fD3358699416897e0CaF4806BfcCD67e';
 
   React.useEffect(() => {
     //smart contract instance
     const SmartContractObj = new web3.eth.Contract(
       SmartContract.abi as AbiItem[],
       // NetworkData.address
-      '0x987934934388446e9a1B8261d6859D31cdD0Eaa5'
+      '0xd5C80419fD3358699416897e0CaF4806BfcCD67e'
     );
     setSmObj(SmartContractObj);
   }, []);
